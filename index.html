@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Kanban Board</title>
+</head>
+<body>
+    <div class="container"> <!-- this div with class container will hold all the lists of kanban board-->
+        <h1>Simple Kanban Board</h1>
+        <div class="board">
+            <!-- TO-Do list -->
+             <!-- list 1 -->
+             <div class="list" id="list1">
+                    <h2>To-Do</h2>
+                    <div class="card" draggable="true" id="card1">Wash Dishes</div>  <!-- Draggable attribute enables the content inside the element draggable & Dropable -->
+                    <div class="card" draggable="true" id="card2">Buy Groceries</div>
+                    <div class="card" draggable="true" id="card3">Food prep.</div>
+             </div>
+
+             <!-- In Progress list  -->
+              <!-- list 2 -->
+             <div class="list" id="list2">
+                    <h2>In-Progress</h2>
+                    <div class="card" draggable="true" id="card4">Complete the projects</div>
+             </div>
+             
+             <!-- DONE list  -->
+              <!-- list 3-->
+             <div class="list" id="list3">
+                    <h2>Done</h2>
+                    
+             </div>
+
+
+        </div>  <!-- the Board div closed here-->
+
+
+    </div>    <!-- the container div closes here-->
+    <!-- button to add more tasks in the todo list -->
+    <section class="section-todo list hidden" id="todolist">
+      <h2>Your plan for today ?</h2>
+      <!-- todo form  -->
+      <form class="form-todo">
+        <input type="text" name="" id="" placeholder="Add Todo" />
+        <input type="submit" value="Add Todo" class="btn" />
+      </form>
+
+      <ul class="todo-list">
+        <li>
+          <span class="text">Do this do that</span>
+          <!-- <div class="todo-buttons">
+            <button class="todo-btn done">Done</button>
+            <button class="todo-btn remove">Remove</button>
+          </div> -->
+        </li>
+      </ul>
+    </section>  
+     <button class="add">ADD more tasks </button>
+
+</body>
+</html>
